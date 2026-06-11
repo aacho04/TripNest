@@ -1,5 +1,5 @@
-import SearchBar from '../components/searchbar/SearchBar.jsx'; 
-import '../layout.scss';
+import SearchBar from '../../components/searchbar/SearchBar.jsx'; 
+
 import './homepage.scss';
 function HomePage(){
     return(
