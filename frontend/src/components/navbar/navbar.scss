@@ -59,10 +59,19 @@ nav {
 
     .register {
       background-color: #fece51;
+       @include sm {
+        display: none; // Explicitly forces "Sign in" to hide on mobile
+      }
+       
     }
+    
     a {
-      padding: 12px 24px;
+      padding: 12px 12px;
       margin: 20px;
+       @include sm {
+        display: none; // Explicitly forces "Sign in" to hide on mobile
+      }
+      
     }
     
     .menuIcon {
@@ -100,9 +109,9 @@ nav {
       }
     }
     @include sm {
-      a {
-        display: inline;
-        margin-left: -50%;
+      .menu a {
+        display: flex;
+        margin: 15px 0;
       }
     }
   }
