@@ -1,4 +1,4 @@
-
+@import "../../responsive.scss";
 .singlePage{
     display: flex;
     
@@ -157,6 +157,11 @@
             .sizes{
                 display:flex;
                 justify-content:space-between;
+
+                @include lg{
+                    // font-size:14px;
+
+                }
 
                 .size{
                     display:flex;
