@@ -1,22 +1,26 @@
 .singlePage{
     display: flex;
-    height:100%;
+    // overflow-y: auto;
+    // height: 100%;
+    height: calc(100vh - 100px);
+    
+    
 
     .details{
         flex:3;
         .wrapper{
             padding-right:50px;
             .info{
-                margin-top:50px;
+                margin-top:40px;
                 .top{
                     display:flex;
                     justify-content:space-between;
                     .post{
                         display:flex;
                         flex-direction:column;
-                        gap:20px;
-                        .h1{
-                            font-weight:400px;
+                        gap:10px;
+                        h1{
+                            font-weight:400;
                         }
                         .address{
                             display:flex;
@@ -35,7 +39,7 @@
                             background-color:rgba(254,205,81,0.438);
                             border-radius:5px;
                             width:max-content;
-                            font-weight: 300px;
+                            font-weight: 300;
                             font-size:20px;
                         }
                     }
@@ -60,7 +64,7 @@
 
                 }
                 .bottom{
-                    margin-top:50px;
+                    margin-top:20px;
                     color:#555;
                     line-height:20px;
 
@@ -72,7 +76,81 @@
         flex:2;
         background-color: #fcf5f3;
         .wrapper{
-            padding-left:0px 20px;
+            padding:0px 20px;
+            display :flex;
+            flex-direction:column;
+            gap:10px;
+            img{
+                width:24px;
+                height:24px;
+            }
+
+            .title{
+                font-weight:bold;
+                font-size:18px;
+                margin-bottom:10px;
+
+
+            }
+            .feature{
+                display:flex;
+                align-items:center;
+                gap:10px;
+                padding:10px;
+                background-color:white;
+                border-radius:10px;
+
+                img{
+                    background-color:rgba(254,205,81,0.209);
+                    
+                }
+                .featureText{
+                        span{
+                            font-weight:bold;
+
+                        }
+                        p{
+                            font-size:14px;
+                        }
+                }
+            }
+            .listVertical{
+                display:flex;
+                flex-direction:column;
+                gap:10px;
+                padding:20px 10px;
+                background-color:white;
+                border-radius:10px;
+            }
+
+             .listHorizontal{
+                display:flex;
+               justify-content:space-between;
+               background-color:white;
+                padding:20px 10px;
+                background-color:white;
+                border-radius:10px;
+            }
+
+            .sizes{
+                display:flex;
+                justify-content:space-between;
+
+                .size{
+                    display:flex;
+                    align-items:center;
+                    background-color:white;
+                    gap:10px;
+                    padding:10px;
+                    border-radius:10px;
+                }
+                
+            }
+            .mapContainer{
+                width:100%;
+                height:200px;
+
+            }
         }
     }
 }
