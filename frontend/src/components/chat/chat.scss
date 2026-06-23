@@ -1,0 +1,171 @@
+@import '../../responsive.scss';
+.chat{
+
+    display: flex;
+    height:100%;
+    // overflow: hidden;
+
+
+    flex-direction: column;
+    @include md{
+    height: auto;
+
+    .messages{
+        flex: none;
+    }
+
+    .chatBox{
+        flex: none;
+    }
+}
+    .messages{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+            
+            
+            h1{
+                font-weight:300;
+
+            }
+            .message{
+                background-color:  white;
+                padding:20px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                gap:20px;
+                cursor: pointer;
+
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                 }
+
+                 span{
+                    font-weight: bold;
+                 }
+
+
+
+            
+
+           
+        
+
+        }
+    }
+    .chatBox{
+        flex:2;
+       
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        
+
+        .top{
+            background-color: #f7c14b85;
+            padding:20px;
+             display: flex;
+             align-items: center;
+             gap:20px;
+             font-weight: bold;
+             justify-content:space-between;
+             
+
+             .user{
+
+                display: flex;
+                align-items: center;
+                gap:20px;
+
+             img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+             }
+            }
+            .close{
+                cursor: pointer;
+                font-size: 18px;
+             }
+             
+
+             
+        }
+        .center{
+            /* Firefox */
+            padding:20px;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            // height:350px;
+            flex: 2;
+            overflow-y: auto;
+            
+
+            .chatMessage{
+                width: 50%;
+            
+            &.owner{
+                align-self: flex-end;
+                background-color: #f7c14b85;
+                text-align: right;
+                border-radius:2px;
+            }
+
+            span{
+                font-size:12px;
+                background-color: #f7c14b85;
+                padding:2px;
+                border-radius: 10px;
+            }
+        
+        }
+
+        }
+        .bottom{
+            border-top:2px solid  #f7c14b85;
+              height: 55px;
+              display: flex;
+              align-items: center;
+            justify-content: space-between;
+            min-height: 55px;
+            flex: 1;
+            margin-bottom:20px;
+            //    background:red;
+            
+            textarea{
+                flex:3;
+                height: 36px;
+                border:none;
+                padding: 20px;
+                margin-bottom: 20px;
+
+            }
+
+            button{
+                flex:1;
+                background-color: #f7c14b85;
+                border:none;
+                cursor: pointer;
+                height: 100px;
+                margin-bottom:0px;
+
+
+            }
+
+        
+        }
+    }
+}
