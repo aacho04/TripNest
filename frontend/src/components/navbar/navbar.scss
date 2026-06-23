@@ -73,6 +73,54 @@ nav {
       }
       
     }
+
+    .user{
+      display:flex;
+      align-items:center;
+      font-weight:bold;
+      margin-right:20px;
+       @include sm {
+        display: none; // Explicitly forces user info to hide on mobile
+      }
+       @include md {
+        margin-left:30px;
+        
+      }
+
+      img{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        object-fit:cover;
+        
+      }
+
+      .profile{
+        padding: 12px 24px;
+        background-color: #fece51;
+        border: none;
+        cursor: pointer;
+        position:relative;
+        @include md{
+          padding:10px 15px
+        }
+
+        .notification{
+          position:absolute;
+          top:-8px;
+          right:-8px;
+          background-color: red;
+          color:white;
+          width:25px;
+          height:25px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          border-radius:50%;
+
+        }
+      }
+    }
     
     .menuIcon {
       display: none;
