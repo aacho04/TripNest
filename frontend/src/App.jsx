@@ -9,6 +9,7 @@ import {
 }from "react-router-dom";
 
 import ListPage from "./routes/listpage/ListPage.jsx";
+import ProfilePage from "./routes/profilepage/ProfilePage.jsx";
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
       },{
         path:"login",
         element:<Login/>
+      },{
+        path:"/profile",
+        element:<ProfilePage/>
       }
       ],
     },
