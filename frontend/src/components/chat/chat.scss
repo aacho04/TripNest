@@ -135,7 +135,7 @@
 
         }
         .bottom{
-            border-top:2px solid  #f7c14b85;
+            // border-top:2px solid  #f7c14b85;
               height: 55px;
               display: flex;
               align-items: center;
@@ -150,7 +150,8 @@
                 height: 36px;
                 border:none;
                 padding: 20px;
-                margin-bottom: 20px;
+                margin-top: -10px;
+                border-top:2px solid  #f7c14b85;
 
             }
 
@@ -159,8 +160,10 @@
                 background-color: #f7c14b85;
                 border:none;
                 cursor: pointer;
-                height: 100px;
-                margin-bottom:0px;
+                height: 36px;
+                padding: 20px;
+                margin-top:-10px;
+                 border-top:2px solid  #f7c14b85;
 
 
             }
